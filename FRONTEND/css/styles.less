@@ -1,0 +1,99 @@
+/* ---------------------------------- Variables ---------------------------------- */
+@back-color:rgba(13, 30, 36, 0.9);
+@text-color: rgb(172, 168, 164);
+@footer-text-color: rgb(130, 81, 30);
+
+/* ---------------------------------- Custom ---------------------------------- */
+
+/* --------------------- BODY --------------------- */
+
+body {
+    /*background-image: url('../img/background.jpg');*/
+    background-color: @text-color;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.border-bloc {
+    background-color: @back-color;
+    padding: 10px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+* {
+
+    color: @text-color;
+}
+
+/* ---------------------------------- HEADER ---------------------------------- */
+header.container {
+    background-color: @back-color;
+    max-width: inherit;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+footer.container {
+    background-color: @back-color;
+    max-width: inherit;
+    margin-top: 30px;
+    bottom: 0;
+}
+
+.row.footer-list {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.footer-list h4 {
+    color: @footer-text-color;
+    font-size: 1.7em;
+}
+
+#coryright {
+    font-size: 180%;
+}
+
+.copyright-col p {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.footer-img {
+    width: 69%;
+}
+
+.footer-line {
+    background-color: @footer-text-color;
+    height: 28px;
+    top: 2px;
+}
+
+/* ------- Exception en dessous de 1024px de l'ecran -------*/
+@media only screen and (max-width: 1024px) {
+    .icon-bloc  {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ------- Media -------*/
+
+.coryright_blue {
+    font-weight: bold;
+}

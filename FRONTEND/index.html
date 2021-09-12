@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Liens externe feuilles de style Bootstrap --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--  Liens interne feuilles de style propre au projet --> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+
+    <title>Premier TP</title>
+</head>
+<body>
+    <header class="container">
+        <h1>Formulaire compte client</h1>
+    </header>
+
+    <main class="container container-bloc contact border-bloc">
+      <form id="formBloc" class="row g-3 needs-validation form-bloc" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationTooltip01" placeholder="Clark" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationTooltip02" placeholder="Kent" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltipUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 position-relative">
+          <label for="validationTooltipCivility" class="form-label">Civility</label>
+          <select class="form-select" id="validationTooltipCivility" required>
+            <option selected value="MR">Mr</option>
+            <option value="MS">Ms</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-8 position-relative">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail3" placeholder="superman@superhero.com">
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipPhone" class="form-label">Phone</label>
+          <input type="text" class="form-control chiffres" id="validationTooltipPhone" placeholder="310 450 339..." required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12 position-relative">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <div class="invalid-tooltip">
+            Please provide a valid address.
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationTooltip03" placeholder="Metropolis" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip04" class="form-label">State</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected value="USA">United-States</option>
+            <option value="GB">London</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip05" class="form-label">Zip</label>
+          <input type="text" class="form-control chiffres" id="validationTooltip05" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="inputPassword3" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword3">
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="inputPassword3Confirm" class="form-label">Password confirmation</label>
+          <input type="password" class="form-control" id="inputPassword3Confirm">
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </main>
+    <footer class="container">
+        <div class="row footer-list">
+            <div class="col-12 col-md-4 footer-list"><a href=""><h4>Plan du site</h4></a></div>
+            <div class="col-12 col-md-4 footer-list"><a href=""><h4>Contact</h4></a></div>
+            <div class="col-12 col-md-4 footer-list"><a href=""><h4>Mentions légales</h4></a></div>
+        </div>
+        <div class="row row-line icon-bloc">
+                <div class="col col-md-4 footer-line top"> </div>
+                <div class="col col-md-4 footer-icon">
+                    <div class="row">
+                        <div class="col-1 bloc-vide"></div>
+                        <a href="https://twitter.com/DCComics" class="col-2 footer-icon-img" target="_blank" title="Twitter"><img src="img/footer_twitter-integration.png" class="footer-img" alt="icon twitter"></a>
+                        <a href="https://www.facebook.com/frdccomics" class="col-2 footer-icon-img" target="_blank" title="Facebook"><img src="img/footer_facebook-integration.png" class="footer-img" alt="icon facebook"></a>
+                        <a href="https://www.youtube.com/user/DCEntertainmentTV" class="col-2 footer-icon-img" target="_blank" title="Youtube"><img src="img/footer_youtube-integration.png" class="footer-img" alt="icon youtube"></a>
+                        <a href="https://www.pinterest.fr/dccomics/" class="col-2 footer-icon-img" target="_blank" title="Pinterest"><img src="img/footer_pinterest-integration.png" class="footer-img" alt="printerest"></a>
+                        <a href="https://www.dccomics.com/" class="col-2 footer-icon-img" target="_blank" title="DC Official web site"><img src="img/footer_dc-integration.png" class="footer-img" alt="icon dc. comics vers site offciel"></a>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+                <div class="col col-md-4 footer-line"> </div>
+        </div>
+        <div class="row">
+            <div class="col-12 copyright-col">
+                <p><span id="coryright">©</span> 2021 DC. COMICS by L. Burckert</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Liens externe Javascript jQuery--> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!--  Liens externe Javascript Bootstrap--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!--  Liens interne Javascript jQuery propre au projet--> 
+    <script src="js/script.js"></script>
+</body>
+</html>
